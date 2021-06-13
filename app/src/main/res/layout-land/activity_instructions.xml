@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blueblack">
+
+    <Button
+        android:id="@+id/backbtnins"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:background="@drawable/whiteroundef"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:rotation="180"
+        android:text="➜"
+        android:textAlignment="center"
+        android:textColor="#011832"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="723dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.142">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="733dp"
+                android:layout_height="521dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text=" -> Find the day of the week, given the day.\n\n
+-> The quiz starts with a timer ticking down from 60 seconds.\n\n
+-> Press on an option and click on 'Confirm' to check the answer.\n\n
+-> If the answer selected is correct, 2 points will be added to your\n     score and 5 secs will be added to the time period for the next\n     question,the maximum being  60 secs per question\n\n
+-> If the answer selected is wrong, 1 point will be deducted from \n     your score and 10 secs will be taken away from the time period\n     for the next question.\n\n
+-> The quiz ends when the timer ticks to 0 or when the time per \n     question reaches 0 or lesser.\n\n
+-> All the best ,race yourself along the quiz."
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/productsans"
+        android:text="INSTRUCTIONS"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

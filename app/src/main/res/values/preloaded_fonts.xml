@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/carme</item>
+        <item>@font/comfortaa_light</item>
+        <item>@font/concert_one</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/julius_sans_one</item>
+        <item>@font/leckerli_one</item>
+        <item>@font/monoton</item>
+        <item>@font/montserrat</item>
+        <item>@font/open_sans</item>
+        <item>@font/reem_kufi</item>
+        <item>@font/varela_round</item>
+    </array>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blueblack">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/productsans"
+        android:text="INSTRUCTIONS"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/backbtnins"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:background="@drawable/whiteroundef"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:rotation="180"
+        android:text="➜"
+        android:textAlignment="center"
+        android:textColor="#011832"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="415dp"
+        android:layout_height="548dp"
+        android:fontFamily="@font/productsans"
+        android:text=" -> Find the day of the week, given the day.\n\n
+-> The quiz starts with a timer ticking\n     down from 60 seconds.\n\n
+-> Press on an option and click on submit \n     to check the answer.\n\n
+-> If the answer selected is correct, 2 \n     points will be added to your score and 5 \n     secs will be added to the time period \n     for the next question,maximum being \n     60 secs. per question\n\n
+-> If the answer selected is wrong, 1 point \n     will be deducted from your score and \n     10 secs will be taken away from the \n     time period for the next question.\n\n
+-> The quiz ends when the timer ticks to 0 \n     or when the time per question reaches \n     0 or below.\n\n
+-> All the best ,race your brain along the \n     quiz."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.272" />
+</androidx.constraintlayout.widget.ConstraintLayout>

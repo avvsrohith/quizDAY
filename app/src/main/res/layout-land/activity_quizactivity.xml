@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/QuizBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/turq_gradient"
+    tools:context=".Quizactivity">
+
+
+    <Button
+        android:id="@+id/BTN_Confirm"
+        android:layout_width="318dp"
+        android:layout_height="55dp"
+        android:background="@drawable/whitecurved"
+        android:fontFamily="@font/productsans"
+        android:hapticFeedbackEnabled="true"
+        android:text="Confirm"
+        android:textColor="#021D3D"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
+
+    <TextView
+        android:id="@+id/TV_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:fontFamily="@font/productsans"
+        android:text="Score:1"
+        android:textColor="#EFE1E1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TV_Timer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/TV_Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/productsans"
+        android:text="Timer"
+        android:textColor="#F6F2F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="223dp"
+        android:layout_height="96dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:background="@drawable/whitecurved">
+
+            <TextView
+                android:id="@+id/TV_Question"
+                android:layout_width="212dp"
+                android:layout_height="92dp"
+                android:fontFamily="@font/productsans"
+                android:gravity="center"
+                android:text="4-8-2003"
+                android:textColor="#021C3B"
+                android:textSize="27sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="291dp"
+        android:layout_height="281dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/BTN_Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711">
+
+        <RadioButton
+            android:id="@+id/RB_opt1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/negativebg"
+            android:button="@null"
+            android:fontFamily="@font/productsans"
+            android:freezesText="true"
+            android:gravity="center"
+            android:onClick="clicked"
+            android:text="Monday"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RB_opt2"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/negativebg"
+            android:button="@null"
+            android:fontFamily="@font/productsans"
+            android:freezesText="true"
+            android:gravity="center"
+            android:onClick="clicked"
+            android:text="Tuesday"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RB_opt3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/negativebg"
+            android:button="@null"
+            android:fontFamily="@font/productsans"
+            android:freezesText="true"
+            android:gravity="center"
+            android:onClick="clicked"
+            android:text="Wednesday"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RB_opt4"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="144dp"
+            android:background="@drawable/negativebg"
+            android:button="@null"
+            android:fontFamily="@font/productsans"
+            android:freezesText="true"
+            android:gravity="center"
+            android:onClick="clicked"
+            android:text="Thursday"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BTN_Back"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:background="@drawable/whiteroundef"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:rotation="180"
+        android:text="➜"
+        android:textAlignment="center"
+        android:textColor="#011832"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
